@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import { Elsie_Swash_Caps } from "next/font/google";
 
 let URL: string;
 
@@ -11,17 +10,14 @@ if (process.env.MONGODB_URI) {
 
 let connected = false;
 
-//Funkcja za pomoca ktora łączymy sie z baza danych
 const connectDB = async () => {
   mongoose.set("strictQuery", true);
 
-  //sprawdzamy czy jestesmy juz polaczeni z baza danych
   if (connected) {
     console.log("MongoDB is connected");
     return;
   }
 
-  //polaczenie z baza danych
   try {
     await mongoose.connect(URL);
     connected = true;

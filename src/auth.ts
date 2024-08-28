@@ -11,7 +11,6 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [Google],
   callbacks: {
     async signIn({ profile }) {
-      console.log(profile);
       await connectDB();
       if (!profile) throw new Error("There is no profile to save to database");
       const userExists = await User.findOne({ email: profile.email });

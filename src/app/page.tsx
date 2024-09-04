@@ -1,4 +1,4 @@
-import connectDB from "../../db/config";
+import connectDB from "@/db/config";
 
 export default function Home() {
   connectDB();

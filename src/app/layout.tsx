@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Vollkorn } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header/Header";
 import Providers from "@/providers";
 
 const inter = Inter({ subsets: ["latin"] });
+const vollkorn = Vollkorn({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   title: "Candle Companion",
@@ -19,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-gradient-to-r from-main-purple to-secondary-purple h-[3000px] antialiased`}>
+        className={`${vollkorn.className} bg-gradient-to-r from-main-purple to-secondary-purple h-[3000px] antialiased`}>
         <Providers>
           <Header />
           {children}

@@ -38,7 +38,8 @@ export default function UserMenu({ name, closeMenu }: nameProps) {
             Hello <b className="text-main-purple">{name}</b> !
           </p>
           <Link
-            href="/"
+            onClick={closeMenu}
+            href="/dashboard"
             className="font-bold cursor-pointer hover:text-gray-700 ">
             Dashboard
           </Link>

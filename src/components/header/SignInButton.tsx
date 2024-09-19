@@ -3,8 +3,8 @@ import { signIn } from "next-auth/react";
 export default function SignInButton() {
   return (
     <form
-      action={async () => {
-        await signIn("google");
+      action={() => {
+        signIn("google", { callbackUrl: "/dashboard" });
       }}>
       <button
         type="submit"

@@ -1,6 +1,5 @@
-"use client";
 import Image from "next/image";
-import CTAButton from "./CTAButton";
+import CtaButton from "./CtaButton";
 
 export default function Hero() {
   return (
@@ -36,7 +35,7 @@ export default function Hero() {
           alt="violet candle"
         />
         <div className="flex flex-col gap-2">
-          <CTAButton />
+          <CtaButton />
           <p className="text-gray-300 font-serif underline text-sm">
             Start Today and Light Up Your Candle Buisness with us for free!
           </p>

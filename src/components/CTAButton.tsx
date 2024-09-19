@@ -1,11 +1,12 @@
-import { signIn } from "next-auth/react";
+import { signIn } from "@/auth";
 
 export default function ctaButton() {
   return (
     <form
       className="w-full"
       action={async () => {
-        await signIn("google");
+        "use server";
+        await signIn("google", { redirectTo: "/dashboard" });
       }}>
       <button
         type="submit"

@@ -1,6 +1,6 @@
 import { signIn } from "@/auth";
 
-export default function ctaButton() {
+export default function CtaButton() {
   return (
     <form
       className="w-full"

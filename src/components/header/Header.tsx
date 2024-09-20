@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import SessionPanel from "./SessionPanel";
+import HeaderAuth from "./HeaderAuth";
 
 export default function Header() {
   return (
@@ -12,7 +12,7 @@ export default function Header() {
       </Link>
 
       <div className="flex gap-10 items-center px-4 md:px-8">
-        <SessionPanel />
+        <HeaderAuth />
       </div>
     </div>
   );

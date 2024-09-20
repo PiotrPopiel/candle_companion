@@ -5,7 +5,7 @@ import SignInButton from "./SignInButton";
 import UserAvatar from "./UserAvatar";
 import { ImSpinner2 } from "react-icons/im";
 
-export default function SessionPanel() {
+export default function HeaderAuth() {
   const { data: session, status } = useSession();
 
   let sessionContent: React.ReactNode;

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CtaButton from "./CtaButton";
+import CtaButton from "./cta-button";
 
 export default function Hero() {
   return (

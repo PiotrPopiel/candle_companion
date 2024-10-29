@@ -1,4 +1,4 @@
-import Hero from "@/components/Hero";
+import Hero from "@/components/hero";
 import connectDB from "@/db/config";
 
 export default function Home() {

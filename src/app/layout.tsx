@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { Vollkorn } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header/Header";
 import Providers from "@/providers";
 import Footer from "@/components/footer";
 
-const inter = Inter({ subsets: ["latin"] });
 const vollkorn = Vollkorn({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
@@ -14,7 +12,7 @@ export const metadata: Metadata = {
   description: "Personal assistant for candle makers :)",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

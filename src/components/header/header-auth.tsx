@@ -1,8 +1,8 @@
 "use client";
 
 import { useSession } from "next-auth/react";
-import SignInButton from "./SignInButton";
-import UserAvatar from "./UserAvatar";
+import SignInButton from "../sign-in-button";
+import UserAvatar from "./user-avatar";
 import { ImSpinner2 } from "react-icons/im";
 
 export default function HeaderAuth() {

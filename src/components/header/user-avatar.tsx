@@ -1,5 +1,5 @@
 import Image from "next/image";
-import UserMenu from "./UserMenu";
+import UserMenu from "./user-menu";
 import { useState } from "react";
 
 type userProps = {

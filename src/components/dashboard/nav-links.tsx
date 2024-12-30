@@ -12,7 +12,11 @@ import {
 
 const links = [
   { name: "Dashboard", href: "/dashboard", icon: RiDashboardLine },
-  { name: "Products", href: "/dashboard/products", icon: RiCandleLine },
+  {
+    name: "Products",
+    href: "/dashboard/products",
+    icon: RiCandleLine,
+  },
   { name: "Sales", href: "/dashboard/sales", icon: RiMoneyDollarCircleLine },
 ];
 

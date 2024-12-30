@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.center {
+  @apply flex justify-center items-center;
+}
+
+.formInput {
+  @apply border border-secondary-purple rounded p-1 px-2 w-[220px];
+}
+
+.formLabel {
+  @apply font-medium text-main-purple text-lg cursor-pointer;
+}

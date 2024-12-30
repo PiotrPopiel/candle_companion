@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import SignOutButton from "./SignOutButton";
+import SignOutButton from "../sign-out-button";
 import Link from "next/link";
 
 type nameProps = {
